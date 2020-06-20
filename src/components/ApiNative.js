@@ -3,9 +3,7 @@ import bridge from '@vkontakte/vk-bridge';
 import View from '@vkontakte/vkui/dist/components/View/View';
 import ScreenSpinner from '@vkontakte/vkui/dist/components/ScreenSpinner/ScreenSpinner';
 import '@vkontakte/vkui/dist/vkui.css';
-
-import Home from './account';
-
+import Account from './account';
 
 const ApiNative = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -34,8 +32,7 @@ const ApiNative = () => {
 
 	return (
 		<View activePanel={activePanel} popout={popout}>
-			<ApiNative id='home' fetchedUser={fetchedUser} go={go} />
-			
+			<Account id='account' fetchedUser={fetchedUser} go={go} />
 		</View>
 	);
 }

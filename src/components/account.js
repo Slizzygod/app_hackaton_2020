@@ -9,7 +9,6 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar'
 
 const Account = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
-		
 		{fetchedUser &&
 		<Group title="User Data Fetched with VK Bridge">
 			<Cell

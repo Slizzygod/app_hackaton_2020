@@ -9,6 +9,10 @@ import Icon28StatisticsOutline from '@vkontakte/icons/dist/28/statistics_outline
 import Icon28MarketOutline from '@vkontakte/icons/dist/28/market_outline';
 import Account from './components/account';
 import CardEvent from './components/CardEvent';
+import CardShop from './components/CardShop';
+import CardAchievements from './components/CardAchievements';
+import CardRating from './components/CardRating';
+// import ApiNative from './components/ApiNative';
 
 class App extends React.Component {
 	constructor (props) {
@@ -23,7 +27,7 @@ class App extends React.Component {
 	onStoryChange (e) {
 	  this.setState({ activeStory: e.currentTarget.dataset.story })
 	}
-  
+
 	render () {
   
 	  return (
@@ -54,12 +58,12 @@ class App extends React.Component {
 			  data-story="market"
 			  text="Магазин"
 			><Icon28MarketOutline /></TabbarItem>
-			<TabbarItem
+			{/* <TabbarItem
 			  onClick={this.onStoryChange}
 			  selected={this.state.activeStory === 'more'}
 			  data-story="more"
 			  text="Ещё"
-			><Icon28More /></TabbarItem>
+			><Icon28More /></TabbarItem> */}
 		  </Tabbar>
 		}>
 		  <View id="home" activePanel="home">
@@ -72,27 +76,29 @@ class App extends React.Component {
 		  <View id="achievements" activePanel="achievements">
 			<Panel id="achievements">
 			  <PanelHeader>Достижения</PanelHeader>
+			  <CardAchievements />
 			</Panel>
 		  </View>
 		  <View id="statistics" activePanel="statistics">
 			<Panel id="statistics">
 			  <PanelHeader>Рейтинг</PanelHeader>
+			  <CardRating />
 			</Panel>
 		  </View>
 		  <View id="market" activePanel="market">
 			<Panel id="market">
 			  <PanelHeader>Магазин</PanelHeader>
+			  <CardShop />
 			</Panel>
 		  </View>
-		  <View id="more" activePanel="more">
+		  {/* <View id="more" activePanel="more">
 			<Panel id="more">
 			  <PanelHeader>Ещё</PanelHeader>
 			</Panel>
-		  </View>
+		  </View> */}
 		</Epic>
 	  )
 	}
   }
-
 
 export default App;
