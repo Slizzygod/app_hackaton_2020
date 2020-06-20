@@ -1,0 +1,14 @@
+.merch__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.merch__card img{
+    width: 40%;
+}
+
+.merch__card p{
+    font-size: 8px;
+    font-weight: bold;
+}

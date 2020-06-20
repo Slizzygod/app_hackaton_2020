@@ -7,12 +7,12 @@ import Icon28HomeOutline from '@vkontakte/icons/dist/28/home_outline';
 import Icon28MagicWandOutline from '@vkontakte/icons/dist/28/magic_wand_outline';
 import Icon28StatisticsOutline from '@vkontakte/icons/dist/28/statistics_outline';
 import Icon28MarketOutline from '@vkontakte/icons/dist/28/market_outline';
-import Account from './components/account';
+import Icon28CoinsOutline from '@vkontakte/icons/dist/28/coins_outline';
 import CardEvent from './components/CardEvent';
 import CardShop from './components/CardShop';
 import CardAchievements from './components/CardAchievements';
 import CardRating from './components/CardRating';
-// import ApiNative from './components/ApiNative';
+import ApiNative from './components/ApiNative';
 
 class App extends React.Component {
 	constructor (props) {
@@ -68,8 +68,8 @@ class App extends React.Component {
 		}>
 		  <View id="home" activePanel="home">
 			<Panel id="home">
-			  <PanelHeader>Главная</PanelHeader>
-			  {/* <Account /> */}
+			  <PanelHeader>Главная</PanelHeader>  
+			  <ApiNative />
 			  <CardEvent />
 			</Panel>
 		  </View>
