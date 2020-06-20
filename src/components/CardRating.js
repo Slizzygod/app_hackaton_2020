@@ -10,7 +10,7 @@ function CardRating() {
       <Card size = "l" mode = "outline" >
       <RichCell disabled multiline before = {
         <Avatar size = {72} src={('https://daily.scm.com.ua/wp-content/uploads/2017/05/Dmitriy-Vakulyuk.jpg')}/>}
-          text = "Тарас иванов"
+          text = "Тарас Иванов"
           caption = "Легаси"
           after = "5000 баллов"
           actions = {
