@@ -8,13 +8,14 @@ import Icon28MagicWandOutline from '@vkontakte/icons/dist/28/magic_wand_outline'
 import Icon28StatisticsOutline from '@vkontakte/icons/dist/28/statistics_outline';
 import Icon28MarketOutline from '@vkontakte/icons/dist/28/market_outline';
 import Account from './components/account';
+import CardEvent from './components/CardEvent';
 
 class App extends React.Component {
 	constructor (props) {
 	  super(props);
   
 	  this.state = {
-		activeStory: 'more'
+		activeStory: 'home'
 	  };
 	  this.onStoryChange = this.onStoryChange.bind(this);
 	}
@@ -64,7 +65,8 @@ class App extends React.Component {
 		  <View id="home" activePanel="home">
 			<Panel id="home">
 			  <PanelHeader>Главная</PanelHeader>
-			  <Account />
+			  {/* <Account /> */}
+			  <CardEvent />
 			</Panel>
 		  </View>
 		  <View id="achievements" activePanel="achievements">

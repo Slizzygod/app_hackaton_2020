@@ -5,7 +5,6 @@ import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
-import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar'
 
 const Account = ({ id, go, fetchedUser }) => (
