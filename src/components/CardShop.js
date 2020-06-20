@@ -20,14 +20,14 @@ function CardShop() {
               <img src="https://vangogh.teespring.com/v3/image/fbWGNqYJKN6vIdpDoUBkJT2nzxs/480/560.jpg" />
               <p>1000 баллов</p>
             </div>
-            <Button style={{padding: '1px 30px'}} stretched>Получить свое</Button>
+            <Button style={{width: '100%'}} stretched>Получить свое</Button>
         </Card>
         <Card size="m">
             <div class="merch__card" style={{ height: 96 }} >
               <img src="https://w7.pngwing.com/pngs/1000/777/png-transparent-t-shirt-adidas-hoodie-los-angeles-lakers-tees-merch-tshirt-active-shirt-adidas.png" />
               <p>1000 баллов</p>
             </div>
-            <Button style={{padding: '1px 30px'}} stretched>Получить свое</Button>
+            <Button style={{width: '100%'}} stretched>Получить свое</Button>
         </Card>
     </CardGrid>
     <CardGrid>
@@ -36,14 +36,14 @@ function CardShop() {
               <img src="https://www.sostav.ru/images/news/2019/07/25/ziex7vlp.jpg" />
               <p>1000 баллов</p>
             </div>
-            <Button style={{padding: '1px 30px'}} stretched>Получить свое</Button>
+            <Button style={{width: '100%'}} stretched>Получить свое</Button>
         </Card>
         <Card size="m">
             <div class="merch__card" style={{ height: 96 }} >
               <img src="https://vangogh.teespring.com/v3/image/fbWGNqYJKN6vIdpDoUBkJT2nzxs/480/560.jpg" />
               <p>1000 баллов</p>
             </div>
-            <Button style={{padding: '1px 30px'}} stretched>Получить свое</Button>
+            <Button style={{width: '100%'}} stretched>Получить свое</Button>
         </Card>
     </CardGrid>
   </Panel>
