@@ -19,7 +19,6 @@ class Account extends React.Component {
 	render() {
 		const props = this.props;
 		const userpr = props.user;
-		console.log(props.user);
 		return (
 			<Panel id={props.id}>
 				<Group>

@@ -1,6 +1,6 @@
 import React from 'react';
 import bridge from '@vkontakte/vk-bridge'
-import { Epic, Tabbar, TabbarItem, View, Panel, PanelHeader, ConfigProvider, Text } from '@vkontakte/vkui';
+import { Epic, Tabbar, TabbarItem, View, Panel, PanelHeader, ConfigProvider, Text, Div } from '@vkontakte/vkui';
 
 import Icon28More from '@vkontakte/icons/dist/28/more';
 import Icon28HomeOutline from '@vkontakte/icons/dist/28/home_outline';
@@ -29,7 +29,7 @@ class App extends React.Component {
 	}
 
 	render () {
-  
+		
 	  return (
 		<Epic activeStory={this.state.activeStory} tabbar={
 		  <Tabbar>
@@ -58,18 +58,11 @@ class App extends React.Component {
 			  data-story="market"
 			  text="Магазин"
 			><Icon28MarketOutline /></TabbarItem>
-			{/* <TabbarItem
-			  onClick={this.onStoryChange}
-			  selected={this.state.activeStory === 'more'}
-			  data-story="more"
-			  text="Ещё"
-			><Icon28More /></TabbarItem> */}
 		  </Tabbar>
 		}>
 		  <View id="home" activePanel="home">
 			<Panel id="home">
-			  {/* <PanelHeader separator={false}>Главная</PanelHeader>  */}
-			  <PanelHeader separator={false}
+			<PanelHeader separator={false}
               right={ <Text weight="regular" style={{display:"block"}}><span style={{display:"inline-block",fontSize:"25px"}}>3000</span> <div style={{display:"inline-block",verticalAlign:"bottom"}}><Icon28CoinsOutline /></div></Text> }
             >
 				Главная
@@ -108,11 +101,6 @@ class App extends React.Component {
 			  <CardShop />
 			</Panel>
 		  </View>
-		  {/* <View id="more" activePanel="more">
-			<Panel id="more">
-			  <PanelHeader>Ещё</PanelHeader>
-			</Panel>
-		  </View> */}
 		</Epic>
 	  )
 	}

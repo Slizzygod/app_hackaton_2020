@@ -9,10 +9,10 @@ function CardRating() {
     <CardGrid >
       <Card size = "l" mode = "outline" >
       <RichCell disabled multiline before = {
-        <Avatar size = {72} src={('https://daily.scm.com.ua/wp-content/uploads/2017/05/Dmitriy-Vakulyuk.jpg')}/>}
+        <Avatar size = {72} src={('https://thispersondoesnotexist.com/image')}/>}
           text = "Тарас Иванов"
           caption = "Легаси"
-          after = "5000 баллов"
+          after = "5000 дублонов"
           actions = {
             <React.Fragment ><Button > Вступить в связь </Button></React.Fragment>
           } 
@@ -21,16 +21,52 @@ function CardRating() {
       </Card> 
       <Card size = "l" mode = "outline" >
       <RichCell disabled multiline before = {
-        <Avatar size = {72} src={('https://sun9-8.userapi.com/c836230/v836230430/26df5/e-_MnMhI5Qk.jpg?ava=1')}/>}
+        <Avatar size = {72} src={('https://thispersondoesnotexist.com/image')}/>}
           text = "Иванова Лиза"
-          caption = "Салага"
-          after = "2100 баллов"
+          caption = "Опытный боец"
+          after = "2100 дублонов"
           actions = {
             <React.Fragment ><Button > Вступить в связь </Button></React.Fragment>
           } 
           >
       </RichCell> 
-      </Card>            
+      </Card>  
+      <Card size = "l" mode = "outline" >
+      <RichCell disabled multiline before = {
+        <Avatar size = {72} src={('https://thispersondoesnotexist.com/image')}/>}
+          text = "Иванов Данила"
+          caption = "Новичок"
+          after = "1200 дублонов"
+          actions = {
+            <React.Fragment ><Button > Вступить в связь </Button></React.Fragment>
+          } 
+          >
+      </RichCell> 
+      </Card>
+      <Card size = "l" mode = "outline" >
+      <RichCell disabled multiline before = {
+        <Avatar size = {72} src={('https://thispersondoesnotexist.com/image')}/>}
+          text = "Шымов Юлия"
+          caption = "Опытный боец"
+          after = "500 дублонов"
+          actions = {
+            <React.Fragment ><Button > Вступить в связь </Button></React.Fragment>
+          } 
+          >
+      </RichCell> 
+      </Card>
+      <Card size = "l" mode = "outline" >
+      <RichCell disabled multiline before = {
+        <Avatar size = {72} src={('https://thispersondoesnotexist.com/image')}/>}
+          text = "Кузнецов Киря"
+          caption = "Новичок"
+          after = "500 дублонов"
+          actions = {
+            <React.Fragment ><Button > Вступить в связь </Button></React.Fragment>
+          } 
+          >
+      </RichCell> 
+      </Card>          
     </CardGrid>
     );
   }
